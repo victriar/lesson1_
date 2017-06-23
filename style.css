@@ -1,0 +1,186 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+div.wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    background: peachpuff url(31.jpg) center no-repeat;
+    font-size: 18px;
+    font-family: "Century Gothic", sans-serif;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    background: lightcoral;
+    position: fixed;
+    opacity: 0.9;
+
+}
+
+ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 15px 20px 15px 20px;
+    list-style: none;
+    background-color: lightcoral;
+    font-size: 20px;
+    box-shadow: 4px 4px 4px peachpuff;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    display: flex;
+    text-align: center;
+    width: 100px;
+    position: relative;
+    flex-basis: auto;
+    align-self: center;
+}
+
+ul.menu > li > h1 {
+    text-shadow: 4px 4px 4px dimgrey;
+    font-size: 15px;
+    text-align: match-parent;
+    color: white;
+    flex-grow: 2;
+}
+
+ul.menu > li > a {
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+}
+
+ul.menu > li > a:hover {
+    background-color: brown;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    background-color: burlywood;
+    border: 1px solid peru;
+    text-align: left;
+    margin-top: 50px;
+}
+
+ul.submenu > li {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 5px;
+    border: 1px solid burlywood;
+    color: white;
+    background-color: sandybrown;
+    text-decoration: none;
+
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+
+}
+
+.main {
+    padding-top: 125px;
+    padding-left: 15px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgba(240,248,255,0.4);
+}
+
+.all-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+    width: 400px;
+}
+
+.item > img {
+    max-height: 200px;
+    box-shadow: 4px 4px 4px dimgrey;
+    transform: scale(1, 1);
+    -webkit-transition: all 1s ease-out;
+    z-index: 999;
+}
+
+.item> img:hover {
+    transform: scale(1.06, 1.06);
+}
+.item > h3 {
+    text-align: center;
+    color: brown;
+    text-shadow: 4px 4px 4px peachpuff;
+}
+
+.aIt {
+    text-decoration: none;
+}
+
+.button {
+    background-color: sandybrown;
+    color: white;
+    width: 100px;
+    border: 0 solid peru;
+    border-radius: 19px;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #8a3e48;
+    box-shadow: 3px 3px 6px -1px #8a3e48;
+}
+
+.a {
+    display: block;
+    text-decoration: none;
+}
+
+.a:hover {
+    display: block;
+    background-color: #8a3e48;
+    color: #F4A460;
+    width: 100px;
+    border: 0 solid peru;
+    border-radius: 19px;
+    font-size: 15px;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #8a3e48;
+    box-shadow: 3px 3px 6px -1px #8a3e48;
+    margin-left: -6px;
+    margin-top: -1px;;
+}
+
+.a:active {
+    top: 1px;
+}
+
+.footer {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
