@@ -19,6 +19,7 @@ div.wrapper {
     position: fixed;
     opacity: 0.9;
     z-index:999999;
+    margin:0;
 
 }
 
