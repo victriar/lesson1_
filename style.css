@@ -5,7 +5,6 @@ body {
 }
 
 div.wrapper {
-    margin:0;
     min-height: 100%;
     min-width: 100%;
     background: peachpuff url(31.jpg) center no-repeat;
@@ -106,7 +105,7 @@ ul.menu > li:hover > ul.submenu {
 }
 
 .main {
-   margin-top: 100px;
+   padding-top: 100px;
     padding-left: 15px;
     width: 80%;
     margin-left: 10%;
